@@ -1,0 +1,5 @@
+//下载
+        response.setContentType("application/octet-stream;charset=UTF-8");
+        String fileName= URLEncoder.encode("自己写文件名称","UTF-8");
+
+        response.addHeader("Content-Disposition","attachment;filename="+fileName+".xls");
